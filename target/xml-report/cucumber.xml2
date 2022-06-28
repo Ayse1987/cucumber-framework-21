@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="696.423">
+    <testcase classname="Manger_login_test" name="TC_01_reservation_manager_profile" time="83.285">
+        <system-out>
+            <![CDATA[Given user is on the application_login page.................................passed
+And user enters manager_id "manager"........................................passed
+And user enters manager_password "Manager1!"................................passed
+And clicks on login button..................................................passed
+And verify login "manager" is displayed.....................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Manger_login_test" name="TC_01_reservation_manager_profile_2" time="172.54">
+        <system-out>
+            <![CDATA[Given user is on the application_login page.................................passed
+And user enters manager_id "manager2".......................................passed
+And user enters manager_password "Manager2!"................................passed
+And clicks on login button..................................................passed
+And verify login "manager2" is displayed....................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Manger_login_test" name="TC_01_reservation_manager_profile_3" time="123.079">
+        <system-out>
+            <![CDATA[Given user is on the application_login page.................................passed
+And user enters manager_id "manager3".......................................passed
+And user enters manager_password "Manager3!"................................passed
+And clicks on login button..................................................passed
+And verify login "manager3" is displayed....................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Manger_login_test" name="TC_02_reservation_admin_profile" time="105.573">
+        <system-out>
+            <![CDATA[Given user is on the application_login page.................................passed
+And user enters manager_id "admin"..........................................passed
+And user enters manager_password "Techproed123!"............................passed
+And clicks on login button..................................................passed
+And verify login "admin" is displayed.......................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Finding product on google search" name="TC01_iphone_search" time="32.828">
+        <system-out>
+            <![CDATA[Given user in on the google page............................................passed
+Given user search for "iPhone"..............................................passed
+Then verify the result has "iPhone".........................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Finding product on google search" name="TC02_iphone_search" time="75.224">
+        <system-out>
+            <![CDATA[Given user in on the google page............................................passed
+Given user search for "bmw".................................................passed
+Then verify the result has "bmw"............................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Finding product on google search" name="TC03_iphone_search" time="35.828">
+        <system-out>
+            <![CDATA[Given user in on the google page............................................passed
+Given user search for "tesla"...............................................passed
+Then verify the result has "tesla"..........................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Manager should create a reservation" name="TC01_manager_should_create_hotel_reservation" time="67.106">
+        <failure message="expected:&lt;4&gt; but was:&lt;5&gt;" type="java.lang.AssertionError">
+            <![CDATA[Given user is on the application_login page.................................passed
+And user enters manager_id "manager"........................................passed
+And user enters manager_password "Manager1!"................................passed
+And clicks on login button..................................................passed
+And verify login "manager" is displayed.....................................passed
+And user navigates to create_room_reservation_page..........................passed
+And user enters the IDUser..................................................passed
+And user enters the IDHotel.................................................passed
+And user enters the price...................................................passed
+And user enters the date_start..............................................passed
+And user enters the date_end................................................passed
+And user enters the adult_amount............................................passed
+And user enters the children_amount.........................................passed
+And user enters the contact_name............................................passed
+And user enters the contact_phone...........................................passed
+And user enters the contact_email...........................................passed
+And user enters the notes...................................................passed
+And user clicks on the approved checkbox....................................passed
+And user clicks on the is_paid checkbox.....................................passed
+And user clicks on the save_button..........................................passed
+Then user verifies the success_message......................................failed
+Then close the application..................................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected:<4> but was:<5>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinitions.Room_Reservation_Step_Defs.user_verifies_the_success_message(Room_Reservation_Step_Defs.java:91)
+	at ✽.user verifies the success_message(file:///C:/Users/Ayse/IdeaProjects/cucumber-framework-21/./src/test/resources/features/day19_room_reservation_1.feature:24)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
